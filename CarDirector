@@ -1,0 +1,22 @@
+package builder;
+
+public class CarDirector {
+
+    public Car buildSportsCar(CarBuilder builder) {
+        return builder
+                .setEngine("V6")
+                .setColor("Red")
+                .setWheels("Sport")
+                .setSeats(2)
+                .build();
+    }
+
+    public Car buildFamilyCar(CarBuilder builder) {
+        return builder
+                .setEngine("V4")
+                .setColor("Blue")
+                .setWheels("Standard")
+                .setSeats(5)
+                .build();
+    }
+}
